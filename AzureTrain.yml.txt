@@ -1,0 +1,31 @@
+inputs: 
+
+  dataset: 
+
+    data: 
+
+      path: azureml://datastores/workspaceblobstore/paths/UI/12-02-2021_061722_UTC/vehicles.csv
+
+    mode: mount 
+
+experiment_name: mldotnet-training 
+
+code: 
+
+  local_path: . 
+
+command: mlnet classification --dataset {inputs.data}/vehicles.csv --label-col price --output outputs --log-file-path outputs/logs 
+
+ 
+
+compute: 
+
+  target: azureml:FullTestPass01 
+
+environment:  
+
+    docker: 
+
+      build: 
+
+        dockerfile: file:DOCKERFILE 
