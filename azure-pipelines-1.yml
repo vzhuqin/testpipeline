@@ -2,15 +2,15 @@ variables:
 
   ml-ws-connection: '<YOUR_VALUE>' # Workspace Service Connection name 
 
-  ml-ws: '<YOUR_VALUE>' # AML Workspace name 
+  ml-ws: 'FullTestPass' # AML Workspace name 
 
-  ml-rg: '<YOUR_VALUE>' ' # AML resource Group name 
+  ml-rg: 'FullTestPass' ' # AML resource Group name 
 
  
 
 trigger: 
 
-  <YOUR_TRIGGER> 
+  - main 
 
  
 
