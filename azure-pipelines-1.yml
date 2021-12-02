@@ -1,6 +1,6 @@
 variables: 
 
-  ml-ws-connection: '<YOUR_VALUE>' # Workspace Service Connection name 
+  ml-ws-connection: 'vzhuqin' # Workspace Service Connection name 
 
   ml-ws: 'FullTestPass' # AML Workspace name 
 
