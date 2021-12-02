@@ -4,7 +4,9 @@ variables:
   ml-rg: 'FullTestPass' ' # AML resource Group name 
 
 trigger: 
-  <YOUR_TRIGGER> 
+  branches:
+    include:
+    - master
 
 pool: 
   vmImage: ubuntu-latest 
