@@ -1,7 +1,7 @@
 variables: 
   ml-ws-connection: 'vzhuqin' # Workspace Service Connection name 
   ml-ws: 'FullTestPass' # AML Workspace name 
-  ml-rg: 'FullTestPass' ' # AML resource Group name 
+  ml-rg: 'FullTestPass' # AML resource Group name 
 
 trigger:
   - main
