@@ -6,9 +6,9 @@ inputs:
 experiment_name: mldotnet-training
 code:
   local_path: .
-command: mlnet classification --dataset {inputs.data}/vehicles.csv --label-col price --output outputs --log-file-path outputs/logs
+command: mlnet classification --dataset {inputs.dataset}/vehicles.csv --label-col price --output outputs --log-file-path
 compute:
-  target: azureml:FullTestPass01
+  target: azureml:BlogTest1107-QIN
 environment:
     docker:
       build:
